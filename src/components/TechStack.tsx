@@ -4,6 +4,8 @@ import styles from './TechStack.module.css';
 const TECH_ITEMS = [
   { name: 'Python', category: 'Programming' },
   { name: 'Tableau', category: 'Visualization' },
+  { name: 'Matplotlib', category: 'Visualization' },
+  { name: 'Streamlit', category: 'Apps' },
   { name: 'Excel', category: 'Analysis' },
   { name: 'Pandas', category: 'Data Science' },
   { name: 'NumPy', category: 'Data Science' },

@@ -8,15 +8,36 @@ export const Footer: React.FC = () => {
         <div className={styles.content}>
           <div className={styles.brand}>
             <div className={styles.logo}>RKM<span className={styles.dot}>.</span></div>
-            <p className={styles.tagline}>B.Tech in Computer Science & Artificial Intelligence</p>
+            <p className={styles.tagline}>B.Tech in Computer Science & Data Science</p>
           </div>
           <div className={styles.contact}>
             <h4 className={styles.title}>Let's collaborate</h4>
-            <p className={styles.email}>rishiwant.kumar@example.com</p>
+            <p className={styles.email}>rishiwant.maurya2024@nst.rishihood.edu.in</p>
             <div className={styles.socials}>
-              <a href="#" className={styles.socialLink}>LinkedIn</a>
-              <a href="#" className={styles.socialLink}>GitHub</a>
-              <a href="#" className={styles.socialLink}>Twitter</a>
+              <a
+                href="https://www.linkedin.com/in/rishiwant-kumar-maurya-681735332/"
+                className={styles.socialLink}
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn
+              </a>
+              <a
+                href="https://github.com/Rishiwant1729"
+                className={styles.socialLink}
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub
+              </a>
+              <a
+                href="https://x.com/R_WAN04"
+                className={styles.socialLink}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Twitter
+              </a>
             </div>
           </div>
         </div>
