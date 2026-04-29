@@ -1,0 +1,72 @@
+.techStack {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.sectionTitle {
+  text-align: left;
+  margin-bottom: 4rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 2rem;
+  row-gap: 3rem;
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  transition: transform 0.3s ease;
+}
+
+.item:hover {
+  transform: translateX(5px);
+}
+
+.iconPlaceholder {
+  width: 48px;
+  height: 48px;
+  background: var(--bg);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; /* Make it round instead of square for softer look */
+  font-weight: 500;
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 1.25rem;
+  font-family: var(--serif);
+  font-weight: 400;
+  color: var(--text-h);
+  margin: 0 0 0.25rem 0;
+}
+
+.category {
+  font-size: 0.75rem;
+  color: var(--text);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+

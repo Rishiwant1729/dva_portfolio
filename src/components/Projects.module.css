@@ -1,0 +1,24 @@
+.projects {
+  background: var(--bg);
+}
+
+.sectionTitle {
+  text-align: left;
+  margin-bottom: 4rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 4rem;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 3rem;
+  }
+}
+

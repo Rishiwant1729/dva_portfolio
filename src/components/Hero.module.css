@@ -1,0 +1,110 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: var(--bg);
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+  max-width: 900px;
+}
+
+.pretitle {
+  font-family: var(--sans);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.875rem;
+  color: var(--accent);
+  margin-bottom: 2rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pretitle::after {
+  content: '';
+  height: 1px;
+  width: 60px;
+  background-color: var(--accent);
+  display: block;
+}
+
+.title {
+  margin-bottom: 2rem;
+  color: var(--text-h);
+}
+
+.italic {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--accent);
+}
+
+.description {
+  font-size: clamp(1.125rem, 3vw, 1.5rem);
+  color: var(--text);
+  margin-bottom: 3.5rem;
+  max-width: 700px;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.cta {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.primaryBtn {
+  background: var(--text-h);
+  color: var(--bg);
+  padding: 1.25rem 2.5rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid var(--text-h);
+}
+
+.primaryBtn:hover {
+  background: var(--bg);
+  color: var(--text-h);
+}
+
+.secondaryBtn {
+  background: transparent;
+  color: var(--text-h);
+  padding: 1.25rem 0;
+  font-weight: 400;
+  font-size: 1rem;
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.secondaryBtn:hover {
+  border-bottom-color: var(--accent);
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 70vh;
+  }
+  .cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .primaryBtn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
